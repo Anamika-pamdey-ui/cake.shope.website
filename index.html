@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cake Shop Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <section class="header">
+    <img src="images/cafe2.jpg" alt="Bakery Banner" style="position:absolute; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index:-1;">
+    <nav>
+      <a href="#"><img src="images/logo.jpg" alt="Logo"></a>
+      <div class="nav-links" id="navlinks">
+        <i class="fa fa-times" id="closeIcon" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#items">Items</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" id="barIcon" onclick="showMenu()"></i>
+    </nav>
+    <div class="text-box">
+      <h1>Welcome to Our Cake Shop</h1>
+      <p>Freshly baked with love. Breads, pastries & cakes crafted for joy.</p>
+      <a href="#items" class="hero-btn">Explore Our Menu</a>
+    </div>
+  </section>
+
+  <!-- Items We Offer -->
+  <section class="itemswehave" id="items">
+    <h1>Items We Offer</h1>
+    <p>From crusty sourdough to gooey red velvet, we have it all!</p>
+    <div class="row">
+      <div class="items col">
+        <h3>Breads</h3>
+        <p>Whole grain, garlic breads, sourdoughs & more.</p>
+        <img src="images/Vanilla Pound Cake - Browned Butter Blondie.jpg" alt="Breads">
+      </div>
+      <div class="items col">
+        <h3>Pastries</h3>
+        <p>Layered, buttery, flaky – heaven in every bite.</p>
+        <img src="images/review2.jpg.jpg" alt="Pastries">
+      </div>
+      <div class="items col">
+        <h3>Cakes</h3>
+        <p>Classic to custom. Made for memories & smiles.</p>
+        <img src="images/logo98.jpg" alt="Cakes">
+      </div>
+    </div>
+  </section>
+
+  <!-- About Us -->
+  <section class="itemswehave" id="about">
+    <h1>About Us</h1>
+    <p>We’re passionate bakers serving smiles since 2015. Family-owned and locally loved, we make every bite count with premium ingredients and lots of love.</p>
+    <div class="row">
+      <div class="items col">
+        <img src="images/cafe1.jpg" alt="Team">
+        <h3>famous</h3>
+        <p>famous for our unique flavors.</p>
+      </div>
+      <div class="items col">
+        <img src="images/ointrest.jpg" alt="Kitchen">
+        <h3>Our cakes</h3>
+        <p>delicious and customizable cakes available.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ambiance / Gallery -->
+  <section class="ourshop" id="gallery">
+    <h1>Ambiance of Our Shop</h1>
+    <p>Cosy corners. Coffee & cakes. Come visit us!</p>
+    <div class="row">
+      <div class="items col">
+        <img src="images/cafe2.jpg" alt="Interior 1">
+        <div class="layer"><h3>theme</h3></div>
+      </div>
+      <div class="items col">
+        <img src="images/aaaa.jpg" alt="Interior 2">
+        <div class="layer"><h3>Display</h3></div>
+      </div>
+      <div class="items col">
+        <img src="images/Parisian Stores- Bakery.jpg" alt="Interior 3">
+        <div class="layer"><h3>Vibes</h3></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Footer -->
+  <section class="testimonial" id="contact">
+    <h1>Contact Us</h1>
+    <p>Visit or call us today!</p>
+    <div class="row">
+      <div class="testimonial-card">
+        <h3>📍 Location</h3>
+        <p>123 Cake Street, Sweet City, paris</p>
+      </div>
+      <div class="testimonial-card">
+        <h3>📞 Call Us</h3>
+        <p>86860</p>
+      </div>
+      <div class="testimonial-card">
+        <h3>📧 Email</h3>
+        <p>hello@bakerydelight.in</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Bakery Delight. All rights reserved.</p>
+  </footer>
+
+  <!-- JS Burger Menu -->
+  <script>
+    const navLinks = document.getElementById("navlinks");
+    const barIcon = document.getElementById("barIcon");
+    const closeIcon = document.getElementById("closeIcon");
+
+    function showMenu() {
+      navLinks.classList.add("active");
+      barIcon.style.display = "none";
+      closeIcon.style.display = "block";
+    }
+
+    function hideMenu() {
+      navLinks.classList.remove("active");
+      barIcon.style.display = "block";
+      closeIcon.style.display = "none";
+    }
+  </script>
+
+</body>
+</html>
